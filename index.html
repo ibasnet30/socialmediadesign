@@ -32,9 +32,57 @@
         </div>
         <div class="nav-right">
             <div class="online">
-            <img src="images/user-1.png" class="nav-profile-img">
+            <img src="images/user-1.png" class="nav-profile-img" onclick="toggleMenu()">
         </div>
 
+        </div>
+
+
+        <!-- Profile dropdown -->
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="images/user-1.png" alt="">
+                    <div>
+                        <h3>Rayan Walt </h3>
+                        <a href="profile.html">See your profile</a>
+                    </div>
+                </div>
+
+                <hr>
+                <a href="#" class="profile-menu-link">
+                <img src="images/feedback.png" alt="">
+                <p> Give Feedback</p>
+                <span>></span>
+                </a>
+
+                <a href="#" class="profile-menu-link">
+                    <img src="images/setting.png" alt="">
+                    <p>Setting & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/help.png" alt="">
+                    <p> Help & Support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/feedback.png" alt="">
+                    <p> Give Feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/display.png" alt="">
+                    <p> Display & Accessbility</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/logout.png" alt="">
+                    <p> Logout</p>
+                    <span>></span>
+                </a>
+                    
+            </div>
         </div>
 
     </nav>
@@ -99,9 +147,257 @@
 
 
                 <div class="main-content col-md-4">
-                    
+                    <div class="create-post">
+
+                        <div class="create-post-input">
+                            <img src="images/user-1.png" alt="">
+                            <textarea rows="2" placeholder="Write a post"></textarea>
+                        </div>
+
+                        <div class="create-post-links">
+                            <li><img src="images/photo.png">Photo</li>
+                            <li><img src="images/video.png">Video</li>
+                            <li><img src="images/event.png">Event</li>
+                            <li>Post</li>
+                        </div>
+                    </div>
+
+
+                        <div class="sort-by">
+                            <hr>
+                            <p>Sort by: <span>top <img src="images/down-arrow.png">
+                            </span></p>
+                        </div>
+
+
+                        <div class="post">
+                            <div class="post-author">
+                                <img src="images/user-3.png">
+
+                            <div>
+                                <h1>
+                                    Benjamin Leo</h1>
+                                    <small> Founder and CEO at Gellelio Group | Angel Investor</small>
+                                    <small>2 hours ago</small>
+                                    
+                                
+                            </div>
+                        </div>
+
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione aperiam distinctio molestias, tempora facere repudiandae iusto! Architecto voluptate ipsum nulla dolore, dicta doloremque vero iste neque aliquid dolorem facere animi!</p>
+                        <img src="images/post-image-1.png" width="100%" alt="">
+
+                        <div class="post-stats">
+                            <div>
+                                <img src="images/thumbsup.png" alt="">
+                                <img src="images/love.png" alt="">
+                                <img src="images/clap.png" alt="">
+                                <span class="liked-users"> Max Joe and 75 others</span>
+                            </div>
+                            <div>
+                                <span>22 comments &middot; 40 shares</span>
+                            </div>
+                        </div>
+
+                        <div class="post-activity">
+                            <div>
+                                <img src="images/user-1.png" class="post-activity-user-icon" alt="">
+                                <img src="images/down-arrow.png" class="post-activity-arrow-icon" alt="">
+                            </div>
+                            <div class="post-activity-link">
+                                <img src="images/like.png">
+                                <span> Like</span>
+                            </div>
+                            <div class="post-activity-link">
+                                <img src="images/comment.png">
+                                <span> Comment</span>
+                            </div>
+                            <div class="post-activity-link">
+                                <img src="images/share.png">
+                                <span> Share</span>
+                            </div>
+                            <div>
+                                <img src="images/send.png">
+                                <span> Send</span>
+                            </div>
+                        </div>
+                        </div>
+
+                        
+                        <div class="post">
+                            <div class="post-author">
+                                <img src="images/user-4.png">
+
+                            <div>
+                                <h1> Katy Clington</h1>
+                                    <small> Founder and CEO at Gogfogf | Angel Investor</small>
+                                    <small>2 hours ago</small>
+                                    
+                                
+                            </div>
+                        </div>
+
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione aperiam distinctio molestias, tempora facere repudiandae iusto! Architecto voluptate ipsum nulla dolore, dicta doloremque vero iste neque aliquid dolorem facere animi!</p>
+                        <img src="images/post-image-2.png" width="100%" alt="">
+
+                        <div class="post-stats">
+                            <div>
+                                <img src="images/thumbsup.png" alt="">
+                                <img src="images/love.png" alt="">
+                                <img src="images/clap.png" alt="">
+                                <span class="liked-users"> Max Joe and 75 others</span>
+                            </div>
+                            <div>
+                                <span>22 comments &middot; 40 shares</span>
+                            </div>
+                        </div>
+
+                        <div class="post-activity">
+                            <div>
+                                <img src="images/user-1.png" class="post-activity-user-icon" alt="">
+                                <img src="images/down-arrow.png" class="post-activity-arrow-icon" alt="">
+                            </div>
+                            <div class="post-activity-link">
+                                <img src="images/like.png">
+                                <span> Like</span>
+                            </div>
+                            <div class="post-activity-link">
+                                <img src="images/comment.png">
+                                <span> Comment</span>
+                            </div>
+                            <div class="post-activity-link">
+                                <img src="images/share.png">
+                                <span> Share</span>
+                            </div>
+                            <div>
+                                <img src="images/send.png">
+                                <span> Send</span>
+                            </div>
+                        </div>
+                        </div>
+
+
+                        <div class="post">
+                            <div class="post-author">
+                                <img src="images/user-4.png">
+
+                            <div>
+                                <h1> Katy Clington</h1>
+                                    <small> Founder and CEO at Gogfogf | Angel Investor</small>
+                                    <small>2 hours ago</small>
+                                    
+                                
+                            </div>
+                        </div>
+
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione aperiam distinctio molestias, tempora facere repudiandae iusto! Architecto voluptate ipsum nulla dolore, dicta doloremque vero iste neque aliquid dolorem facere animi!</p>
+                        <img src="images/post-image-4.png" width="100%" alt="">
+
+                        <div class="post-stats">
+                            <div>
+                                <img src="images/thumbsup.png" alt="">
+                                <img src="images/love.png" alt="">
+                                <img src="images/clap.png" alt="">
+                                <span class="liked-users"> Max Joe and 75 others</span>
+                            </div>
+                            <div>
+                                <span>22 comments &middot; 40 shares</span>
+                            </div>
+                        </div>
+
+                        <div class="post-activity">
+                            <div>
+                                <img src="images/user-1.png" class="post-activity-user-icon" alt="">
+                                <img src="images/down-arrow.png" class="post-activity-arrow-icon" alt="">
+                            </div>
+                            <div class="post-activity-link">
+                                <img src="images/like.png">
+                                <span> Like</span>
+                            </div>
+                            <div class="post-activity-link">
+                                <img src="images/comment.png">
+                                <span> Comment</span>
+                            </div>
+                            <div class="post-activity-link">
+                                <img src="images/share.png">
+                                <span> Share</span>
+                            </div>
+                            <div>
+                                <img src="images/send.png">
+                                <span> Send</span>
+                            </div>
+                        </div>
+                        </div>
+<!--  # rd post -->
+
+                        <div class="post">
+                            <div class="post-author">
+                                <img src="images/user-5.png">
+
+                            <div>
+                                <h1>
+                                    Ariana Taylor</h1>
+                                    <small> Founder at Indie Music | Angel Investor</small>
+                                    <small>3 hours ago</small>
+                                    
+                                
+                            </div>
+                        </div>
+
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione aperiam distinctio molestias, tempora facere repudiandae iusto! Architecto voluptate ipsum nulla dolore, dicta doloremque vero iste neque aliquid dolorem facere animi!</p>
+                        <img src="images/post-image-3.png" width="100%" alt="">
+
+                        <div class="post-stats">
+                            <div>
+                                <img src="images/thumbsup.png" alt="">
+                                <img src="images/love.png" alt="">
+                                <img src="images/clap.png" alt="">
+                                <span class="liked-users"> Max Joe and 75 others</span>
+                            </div>
+                            <div>
+                                <span>22 comments &middot; 40 shares</span>
+                            </div>
+                        </div>
+
+                        <div class="post-activity">
+                            <div>
+                                <img src="images/user-1.png" class="post-activity-user-icon" alt="">
+                                <img src="images/down-arrow.png" class="post-activity-arrow-icon" alt="">
+                            </div>
+                            <div class="post-activity-link">
+                                <img src="images/like.png">
+                                <span> Like</span>
+                            </div>
+                            <div class="post-activity-link">
+                                <img src="images/comment.png">
+                                <span> Comment</span>
+                            </div>
+                            <div class="post-activity-link">
+                                <img src="images/share.png">
+                                <span> Share</span>
+                            </div>
+                            <div>
+                                <img src="images/send.png">
+                                <span> Send</span>
+                            </div>
+                        </div>
+                        </div>
+
+
+
+
+
+
 
                 </div>
+
+
+
+              <!--RIght side  -->
                 <div class="right-sidebar col-md-4">
                     <div class="sidebar-news">
                         <img src="images/more.png" class="info-icon">
@@ -171,7 +467,15 @@
     </div>
 
 
+
+
    
-    
+    <script>
+        let profileMenu=document.getElementById("profileMenu");
+
+        function toggleMenu(){
+            profileMenu.classList.toggle("open-menu")
+        }
+    </script>
 </body>
 </html>

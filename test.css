@@ -1,0 +1,14 @@
+
+
+
+.profile-menu-wrap{
+    background: bisque;
+    max-height: 0;
+    overflow: hidden;
+
+
+}
+
+.profile-menu-wrap.open-menu{
+    max-height: 400px;
+}
