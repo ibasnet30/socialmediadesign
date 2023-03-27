@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-    <nav class="navbar">
+    <nav class="navbar ">
         <div class="nav-left">
             <a href="index.html" class="logo"><img src="images/logo.png"> </a>
 
@@ -20,7 +20,8 @@
             </div>
 
         </div>
-        <div class="nav-center d-flex justify-content-center">
+
+        <div class="nav-center">
            <ul>
             <li><a href="#" class="active-link"><img src="images/home.png"><span>Home</span></a></li>
             <li><a href="#"><img src="images/network.png"><span>My network</span></a></li>
@@ -30,6 +31,7 @@
 
            </ul>
         </div>
+
         <div class="nav-right">
             <div class="online">
             <img src="images/user-1.png" class="nav-profile-img" onclick="toggleMenu()">
@@ -91,10 +93,9 @@
     <!-- navbar end -->
 
     <div class="container">
-        <div class="row">
             <div class="content">
 
-                <div class="left-sidebar col-md-4">
+                <div class="left-sidebar ">
                     <div class="sidebar-profile-box">
                         <img src="images/cover-pic.png" class="img-fluid" width="100%">
                         <div class="sidebar-profile-info">
@@ -115,7 +116,7 @@
 
                         </div>
 
-                        <div class="sidebar-activity">
+                        <div class="sidebar-activity" id="sidebarr">
                             <h3> RECENT</h3>
                             <a href="#"> <img src="images/recent.png" alt="">Web Development</a>
                             <a href="#"> <img src="images/recent.png" alt="">User Interface</a>
@@ -142,11 +143,16 @@
 
                         </div>
 
+                      
+
                 </div>
+                  <p id="showmore" onclick="toggleSide()">Show more<b>+</b></p>
+
+
                 </div>
 
 
-                <div class="main-content col-md-4">
+                <div class="main-content ">
                     <div class="create-post">
 
                         <div class="create-post-input">
@@ -398,7 +404,7 @@
 
 
               <!--RIght side  -->
-                <div class="right-sidebar col-md-4">
+                <div class="right-sidebar ">
                     <div class="sidebar-news">
                         <img src="images/more.png" class="info-icon">
                         <h3> Trending News</h3>
@@ -462,7 +468,6 @@
 
         </div>
 
-        </div>
 
     </div>
 
@@ -477,5 +482,36 @@
             profileMenu.classList.toggle("open-menu")
         }
     </script>
+
+    <script>
+        let sidebarr=document.getElementById("sidebarr");
+        let morelink=document.getElementById("showmore");
+
+        function toggleSide(){
+            sidebarr.classList.toggle("open-activity")
+
+
+
+            
+        if(sidebarr.classList.contains("open-activity")){
+            morelink.innerHTML="Show Less <b>-</b>";
+        }
+
+        else{
+            morelink.innerHTML="Show more <b>+</b>"
+        }
+
+
+
+        }
+
+
+
+
+        
+    </script>
+
+
+
 </body>
 </html>
